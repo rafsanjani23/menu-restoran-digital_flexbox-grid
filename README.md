@@ -45,6 +45,7 @@ Seluruh elemen dari judul, tombol, hingga card menyesuaikan ukuran layar (deskto
 
 ## 📁 Struktur Folder
 
+```plaintext
 menu-restoran-digital/
 │
 ├── index.html
@@ -56,3 +57,4 @@ menu-restoran-digital/
 │ ├── steak.jpg
 │ ├── salad.jpg
 │ └── dessert.jpg
+```
