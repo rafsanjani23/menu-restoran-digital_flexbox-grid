@@ -1,45 +1,65 @@
 # 🍽️ Menu Restoran Digital – Restoran Nusantara
 
-Website **Menu Restoran Digital** ini menampilkan daftar menu makanan, testimoni pelanggan, status buka restoran, serta lokasi di Jakarta Pusat.  
-Dibangun menggunakan **HTML Semantic**, **CSS Flexbox**, dan **CSS Grid Layout** dengan tambahan fitur interaktif **Mode Gelap (Dark Mode)** dan **Status Buka Otomatis**.
+Website **Menu Restoran Digital** menampilkan daftar menu makanan, minuman, dan dessert, dilengkapi fitur interaktif seperti **mode gelap**, **filter kategori**, dan **status buka otomatis** berdasarkan waktu lokal pengguna.  
+Dibangun dengan **HTML5 Semantic**, **CSS Flexbox & Grid**, serta **JavaScript modern** untuk pengalaman pengguna yang dinamis dan responsif.
 
 ---
 
 ## 🧩 Teknologi yang Digunakan
 
 - **HTML5 Semantic Elements**
+
   - `<header>`, `<main>`, `<section>`, `<article>`, `<figure>`, `<figcaption>`, `<footer>`
+
 - **CSS3**
-  - Flexbox untuk tata letak testimoni
-  - Grid Layout untuk tampilan menu makanan
-  - Responsif untuk berbagai ukuran layar
+
+  - Flexbox untuk layout testimoni
+  - Grid Layout untuk tampilan menu
+  - Desain responsif (mobile-first)
+  - Animasi halus (fade-in, pulse)
+
 - **JavaScript**
-  - Toggle Mode Gelap
-  - Status buka otomatis berdasarkan waktu lokal
+
+  - Mode Gelap (Dark Mode Toggle)
+  - Status Buka Otomatis (berdasarkan jam 10:00–22:00)
+  - Filter Menu Interaktif (Semua / Makanan / Minuman / Dessert)
+  - Smooth Scroll untuk navigasi antar bagian
+  - Lazy Loading Gambar dengan efek fade-in
+  - Penanganan Error Gambar (placeholder otomatis)
+
 - **Google Maps Embed**
-  - Untuk menampilkan lokasi restoran di Jakarta Pusat
+  - Menampilkan lokasi restoran langsung di halaman
 
 ---
 
 ## ✨ Fitur Utama
 
 ✅ **Mode Gelap (Dark Mode Toggle)**  
-Tombol untuk beralih antara mode terang dan gelap dengan efek transisi lembut.
+Berpindah antara tema terang 🌞 dan gelap 🌙 dengan penyimpanan preferensi di `localStorage`.
 
 ✅ **Status Jam Buka Otomatis**  
-Menampilkan status _BUKA_ atau _TUTUP_ secara otomatis berdasarkan waktu lokal pengguna.
+Menampilkan status _BUKA_ 🟢 atau _TUTUP_ 🔴 sesuai waktu lokal pengguna.
 
-✅ **Filter Menu Berdasarkan Kategori (Semua / Makanan / Minuman / Dessert)**  
-Mempermudah pengguna dalam menelusuri menu (dapat dikembangkan menjadi interaktif dengan JavaScript tambahan).
+✅ **Filter Menu Interaktif**  
+Memfilter daftar menu berdasarkan kategori tanpa reload halaman.
 
-✅ **Testimoni Pelanggan dengan Flexbox Layout**  
-Menampilkan ulasan pelanggan menggunakan Flexbox agar sejajar dan proporsional di semua ukuran layar.
+✅ **Animasi & Transisi Halus**  
+Efek `fade-in`, `pulse`, dan animasi masuk lembut saat halaman dimuat untuk tampilan modern.
 
-✅ **Peta Lokasi Jakarta Pusat (Google Maps Embed)**  
-Menampilkan lokasi restoran langsung dari Google Maps.
+✅ **Smooth Scrolling Navigasi**  
+Navigasi antar-bagian seperti Menu, Testimoni, dan Kontak menjadi lebih nyaman.
 
-✅ **Desain Responsif & Presisi Layout**  
-Seluruh elemen dari judul, tombol, hingga card menyesuaikan ukuran layar (desktop, tablet, dan mobile).
+✅ **Lazy Loading Gambar + Error Handling**  
+Gambar baru dimuat saat terlihat di layar, dan jika gagal dimuat akan diganti otomatis dengan placeholder.
+
+✅ **Testimoni Pelanggan**  
+Ditata dengan Flexbox agar rapi di semua ukuran layar.
+
+✅ **Peta Lokasi (Google Maps)**  
+Menampilkan lokasi restoran di Jakarta secara langsung.
+
+✅ **Desain Responsif**  
+Kompatibel dengan perangkat desktop, tablet, dan smartphone.
 
 ---
 
@@ -48,13 +68,18 @@ Seluruh elemen dari judul, tombol, hingga card menyesuaikan ukuran layar (deskto
 ```plaintext
 menu-restoran-digital/
 │
-├── index.html
-├── style.css
+├── index.html          # Halaman utama (struktur konten dan elemen)
+├── style.css           # Desain dan layout (termasuk dark mode)
+├── script.js           # Fitur interaktif dan animasi
 └── assets/
-├── img/
-│ ├── burger.jpg
-│ ├── pasta.jpg
-│ ├── steak.jpg
-│ ├── salad.jpg
-│ └── dessert.jpg
+    └── img/
+        ├── burger.jpg
+        ├── pasta.jpg
+        ├── steak.jpg
+        ├── salad.jpg
+        ├── jus-jeruk.jpg
+        ├── teh-manis.jpg
+        ├── cappucino.jpg
+        ├── dessert.jpg
+        └── pancakes.jpg
 ```
