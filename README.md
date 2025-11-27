@@ -63,7 +63,7 @@ Kompatibel dengan perangkat desktop, tablet, dan smartphone.
 
 ---
 
-## 📁 Struktur Folder
+<!-- ## 📁 Struktur Folder
 
 ```plaintext
 menu-restoran-digital/
@@ -82,4 +82,4 @@ menu-restoran-digital/
         ├── cappucino.jpg
         ├── dessert.jpg
         └── pancakes.jpg
-```
+``` -->
